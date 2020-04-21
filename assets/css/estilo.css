@@ -1,0 +1,154 @@
+* {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+/*body {
+    height: 100vh; // vh significa altura absoluta 
+    margin: 0px; // Por padrão o body tem uma margin de 10px, e assim será zerada 
+    display: grid; // Define que será usada CSS Grid para aplicar o layout 
+    grid-template-rows: 120px 1fr 60px; // Define 3 linhas: cabeçalho,  conteúdo e rodapé 
+    grid-template-columns: 300px 1fr; // Define 2 colunas 
+    grid-template-areas: // Definição do grid template area 
+        "cabecalho cabecalho" // Define que o cabecalho ocupará a primeira e a segunda coluna 
+        "principal rodape" // Define que o rodape será na segunda coluna da segunda linha 
+        "principal rodape"; // Define que o rodape será na segunda coluna da terceira linha 
+}*/
+
+body {
+    height: 100vh; /* vh significa altura absoluta */
+    margin: 0px; /* Por padrão o body tem uma margin de 10px, e assim será zerada */
+    display: grid; /* Define que será usada CSS Grid para aplicar o layout */
+    grid-template-rows: 120px 1fr 60px; /* Define 3 linhas: cabeçalho,  conteúdo e rodapé */
+    grid-template-columns: 1fr; /* Define 1 coluna */
+    grid-template-areas: /* Definição do grid template area */
+        "cabecalho" /* Define que o cabecalho ocupará a primeira e a coluna toda */
+        "principal" /* Define que o principal ocupará a primeira e a coluna toda */
+        "rodape"; /* Define que o rodape ocupará a primeira e a coluna toda */
+}
+
+.cabecalho { /* Aqui não é nome da classe CSS e sim da propriedade grid-area */
+    grid-area: cabecalho; /* incluindo o nome a propriedade */
+    background-color: #1867c0;
+    color: white;
+    display: flex; /* Essa propriedade coloca todos os elementos na mesma linha */
+    flex-direction: column; /* Direciona os elementos, nesse caso no eixo da coluna */
+    justify-content: center; /* Aplica o alinhamento em cima do eixo principal idenpendente se é coluna ou linha*/
+    align-items: center; /* Aplica o alinhamento em cima do eixo que corta idenpendente se é coluna ou linha*/
+    padding-bottom: 10px;
+    z-index: 1; /* Da um certo destaque */
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75); /* cssmatic.com */
+}
+
+.cabecalho > h1 {
+    margin: 0px;
+    font-weight: 300;
+    font-size:  2.8rem;
+}
+
+.cabecalho > h2 {
+    margin: 0px;
+    font-weight: 200;
+    font-size:  1.6rem;
+}
+
+.principal {
+    grid-area: principal;
+    height: calc(100vh - 180px); /* Para ocupar 100% subtraindo o tamanho do Header e do Footer */
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.conteudo {
+    position: relative;
+    height: 100%;
+    overflow-y: scroll; /* Insere scroll caso o conteúdo seja maior que o tamanho estipulado */
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
+}
+
+.rodape {
+    grid-area: rodape;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end; /* main axis eixo X*/
+    align-items: center; /* cross axis eixo Y */
+    font-size: 1.2rem;
+    padding: 0px 20px; /* 0px no eixo vertical e 20px no eixo horizontal */
+    color: #444;
+    /*position: sticky; // o rodapé estará sempre visível e estático 
+    bottom: 0px;*/
+}
+
+.modulos {
+    display: flex;
+    flex-wrap: wrap; /* Propriedade que faz a quebra de linha */
+    justify-content: space-around; /* Determina espaço entre os elementos e as laterais */
+}
+
+.modulo {
+    flex-basis: 32%; /* Define a porcentagem que cada elemento irá ocupar na tela */
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.modulo > h3 {
+    margin: 0px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    background-color: #1867c0;
+}
+
+.modulo > ul {
+    margin: 0px;
+    padding: 10px;
+    list-style: none; /* Retira as 'bolinhas' da lista */
+}
+
+.modulo > ul > li {
+    padding: 7px;
+    font-size:  1.2rem;
+    cursor: pointer; /* Quando passar o cursor será apontado para simbolizar que há um link */
+}
+
+.modulo > ul > li > a {
+    display: flex;
+    text-decoration: none; /* Retira o sublinhado dos links */
+    color: #222;
+}
+
+.modulo > ul > li:hover {
+    background-color: #eee;
+}
+
+/* Criação do que seria um Template */
+.modulo.verde { border: 2px solid #4caf50; }
+.modulo.verde > h3 { background-color: #4caf50; }
+
+.modulo.vermelho { border: 2px solid #f44336; }
+.modulo.vermelho > h3 { background-color: #f44336; }
+
+.modulo.azul { border: 2px solid #2196f3; }
+.modulo.azul > h3 { background-color: #2196f3; }
+
+.modulo.roxo { border: 2px solid #9c27b0; }
+.modulo.roxo > h3 { background-color: #9c27b0; }
+
+.modulo.laranja { border: 2px solid #ff9800; }
+.modulo.laranja > h3 { background-color: #ff9800; }
+
+.modulo.verde-escuro { border: 2px solid #1b5e20; }
+.modulo.verde-escuro > h3 { background-color: #1b5e20; }
+
+.modulo.vermelho-escuro { border: 2px solid #b71c1c; }
+.modulo.vermelho-escuro > h3 { background-color: #b71c1c; }
+
+.modulo.azul-escuro { border: 2px solid #0d47a1; }
+.modulo.azul-escuro > h3 { background-color: #0d47a1; }
+
+.modulo.roxo-escuro { border: 2px solid #4a148c; }
+.modulo.roxo-escuro > h3 { background-color: #4a148c; }

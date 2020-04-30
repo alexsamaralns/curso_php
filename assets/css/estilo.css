@@ -71,13 +71,13 @@ body {
 
 .rodape {
     grid-area: rodape;
-    background-color: #ffffff;
+    background-color: #3f3f3f;
     display: flex;
     justify-content: flex-end; /* main axis eixo X*/
     align-items: center; /* cross axis eixo Y */
     font-size: 1.2rem;
     padding: 0px 20px; /* 0px no eixo vertical e 20px no eixo horizontal */
-    color: #444;
+    color: white;
     /*position: sticky; // o rodapé estará sempre visível e estático 
     bottom: 0px;*/
 }
@@ -122,7 +122,7 @@ body {
 }
 
 .modulo > ul > li:hover {
-    background-color: #eee;
+    background-color: rgb(187, 169, 252);
 }
 
 /* Criação do que seria um Template */

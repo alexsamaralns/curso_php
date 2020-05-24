@@ -14,6 +14,26 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
+            <div class="modulo vermelho-escuro">
+                <h3>7. Funções</h3>
+                <ul>
+                    <li>
+                        <a href="exercicio.php?dir=funcoes&file=escopo">
+                            Função & Escopo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=funcoes&file=args_retorno">
+                            Args & Retorno
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=funcoes&file=desafio_palindromo">
+                            Desafio Plaíndromo
+                        </a>
+                    </li>
+                </ul>
+            </div>    
             <div class="modulo verde-escuro">
                     <h3>6. Repetições</h3>
                     <ul>
@@ -35,6 +55,26 @@
                         <li>
                             <a href="exercicio.php?dir=repeticoes&file=break_continue">
                                 Break/Continue
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=desafio_impressao">
+                                Desafio Impressão
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=while_dowhile">
+                                While / Do While
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=desafio_tabela1">
+                                Desafio Tabela 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=repeticoes&file=desafio_tabela2">
+                                Desafio Tabela 2
                             </a>
                         </li>
                     </ul>

@@ -18,6 +18,21 @@
                 <h3>8. Paradigma O.O.</h3>
                 <ul>
                     <li>
+                        <a href="exercicio.php?dir=classes_objetos&file=static">
+                            Membros Estáticos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=classes_objetos&file=visibilidade">
+                            Visibilidade
+                        </a>
+                    </li>
+                    <li>
+                        <a href="exercicio.php?dir=classes_objetos&file=heranca">
+                            Herança
+                        </a>
+                    </li>
+                    <li>
                         <a href="exercicio.php?dir=classes_objetos&file=const_dest">
                             Construtor e Desconstrutor
                         </a>

@@ -4,16 +4,12 @@
 }
 
 body{
-    height: 100vh;
-    margin: 0px;
-    display: grid;
     grid-template-rows:  120px 1fr 60px;
     grid-template-areas: "cabecalho" "principal" "rodape";
 }
 
-.principal {
-    height: calc(100vh - 210px);
-    margin: 15px;
+body.login .principal {
+    height: calc(100vh - 180px);
 }
 
 h3 {
@@ -32,6 +28,8 @@ label, input, button {
 button {
     color: white;
     background-color: #228b22;
+    width: 100%;
+    padding: 6px 0;
 }
 
 button:hover {

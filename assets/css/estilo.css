@@ -19,12 +19,17 @@ body {
     height: 100vh; /* vh significa altura absoluta */
     margin: 0px; /* Por padrão o body tem uma margin de 10px, e assim será zerada */
     display: grid; /* Define que será usada CSS Grid para aplicar o layout */
-    grid-template-rows: 120px 1fr 60px; /* Define 3 linhas: cabeçalho,  conteúdo e rodapé */
+    grid-template-rows: 120px 60px 1fr 60px; /* Define 4 linhas: cabeçalho,  conteúdo e rodapé */
     grid-template-columns: 1fr; /* Define 1 coluna */
-    grid-template-areas: /* Definição do grid template area */
-        "cabecalho" /* Define que o cabecalho ocupará a primeira e a coluna toda */
-        "principal" /* Define que o principal ocupará a primeira e a coluna toda */
-        "rodape"; /* Define que o rodape ocupará a primeira e a coluna toda */
+    /*grid-template-areas:  Definição do grid template area 
+        "cabecalho"  Define que o cabecalho ocupará a primeira e a coluna toda 
+        "principal"  Define que o principal ocupará a primeira e a coluna toda 
+        "rodape";  Define que o rodape ocupará a primeira e a coluna toda */
+    grid-template-areas: 
+        "cabecalho"
+        "navegacao"
+        "principal"
+        "rodape";    
 }
 
 .cabecalho { /* Aqui não é nome da classe CSS e sim da propriedade grid-area */
@@ -54,7 +59,7 @@ body {
 
 .principal {
     grid-area: principal;
-    height: calc(100vh - 180px); /* Para ocupar 100% subtraindo o tamanho do Header e do Footer */
+    height: calc(100vh - 240px); /* Para ocupar 100% subtraindo o tamanho do Header e do Footer */
     background-color: #f0f0f0;
     padding: 20px;
 }
@@ -155,3 +160,21 @@ body {
 
 .modulo.laranja-escuro { border: 2px solid #e65527; }
 .modulo.laranja-escuro > h3 { background-color: #e65527; }
+
+.navegacao {
+    grid-area: navegacao;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #555;
+}
+
+.navegacao > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1.3rem;
+    background-color: rgb(33, 150, 243);
+    padding: 5px 10px;
+    margin-right: 10px;
+}

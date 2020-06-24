@@ -1,5 +1,19 @@
-.navegacao > a.verde { background-color: #4caf50; }
-.navegacao > a.vermelho { background-color: #f44336; }
+.navegacao > a.verde { 
+    background-color: #4caf50; 
+}
+
+.navegacao > a.verde:hover { 
+    background-color: #236325; 
+}
+
+.navegacao > a.azul { 
+    background-color: #afa0f0; 
+}
+
+.navegacao > a.azul:hover { 
+    background-color: #6d5db3; 
+}
+
 
 .conteudo {
     font-size: 2rem;

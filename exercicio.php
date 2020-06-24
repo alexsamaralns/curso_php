@@ -1,8 +1,7 @@
 <?php
-    session_start();
-    if(!$_SESSION['usuario']) {
-        header('Location: login.php');
-    }
+    
+    include('include-file/file-session.php');
+
 ?>
 
 
@@ -21,8 +20,10 @@
         <h2>Visualização do Exercício</h2>
     </header>
     <nav class="navegacao">
+        <span class="usuario">Usuário: <?= $_SESSION['usuario'] ?></span>
         <a href=<?= "{$_GET['dir']}/{$_GET['file']}.php" ?> class="verde">Sem formatação</a>
-        <a href="index.php" class="vermelho">Voltar</a>
+        <a href="index.php" class="azul">Voltar</a>
+        <a class="logout" href="logout.php">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">

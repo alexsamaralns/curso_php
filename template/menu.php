@@ -1,4 +1,24 @@
 <nav class="modulos">
+    <div class="modulo laranja">
+        <h3>15. Banco De Dados</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=db&file=criar_banco">
+                    Criar Banco
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="modulo roxo">
+        <h3>14. Formulário</h3>
+        <ul>
+            <li>
+                <a href="exercicio.php?dir=formulario&file=formulario">
+                    Formulário
+                </a>
+            </li>
+        </ul>
+    </div>
     <div class="modulo azul">
         <h3>13. API</h3>
         <ul>
@@ -30,6 +50,11 @@
             <li>
                 <a href="exercicio.php?dir=api&file=download">
                     Download
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=api&file=imagens">
+                    Desafio Extensão
                 </a>
             </li>
         </ul>

@@ -1,9 +1,9 @@
-<div class="titulo">Download</div>
+<div class="titulo">Desafio Extensão</div>
 
 <?php
 
     ini_set('display_errors', 0);
-    session_start();
+    //session_start();
 
     $arquivo = $_SESSION['arquivos'] ?? []; // '??' caso esteja vazio irá iniciar no modo default um array vazio
     $pastaUpload = __DIR__ . '/../files/'; // __DIR__ = diretório atual
@@ -27,12 +27,12 @@
 
 <ul>
     <?php foreach($arquivos as $arquivo): ?>
-        <li>
-            <a href="../files/<?= $arquivo ?>" target="_blank">
-                <?= $arquivo ?>
-            </a>
-        </li>
-    <?php endforeach ?>
+        <?php if(stripos($arquivo, '.png') > 0): ?>
+            <li>
+                <img src="../files/<?= $arquivo ?>" heigth="120">
+            </li>
+        <?php endif ?>
+    <?php endforeach ?>    
 </ul>
 
 <style>

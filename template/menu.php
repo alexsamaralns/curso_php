@@ -7,6 +7,21 @@
                     Criar Banco
                 </a>
             </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=criar_tabela">
+                    Criar Tabela
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=inserir_1">
+                    Inserir Dados
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=consultar">
+                    Consultar Registros
+                </a>
+            </li>
         </ul>
     </div>
     <div class="modulo roxo">

@@ -13,13 +13,53 @@
                 </a>
             </li>
             <li>
-                <a href="exercicio.php?dir=db&file=inserir_1">
-                    Inserir Dados
+                <a href="exercicio.php?dir=db&file=consultar">
+                    Consultar Registros
                 </a>
             </li>
             <li>
-                <a href="exercicio.php?dir=db&file=consultar">
-                    Consultar Registros
+                <a href="exercicio.php?dir=db&file=excluir_1">
+                    Excluir Registros 1
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=excluir_2">
+                    Excluir Registros 2
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=inserir_1">
+                    Inserir Registros 1
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=inserir_2">
+                    Inserir Registros 2
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=alterar">
+                    Alterar Registros
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=inserir_pdo">
+                    PDO: Inserir
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=consultar_pdo">
+                    PDO: Consultar
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=excluir_pdo">
+                    PDO: Excluir
+                </a>
+            </li>
+            <li>
+                <a href="exercicio.php?dir=db&file=alterar_pdo">
+                    PDO: Alterar
                 </a>
             </li>
         </ul>

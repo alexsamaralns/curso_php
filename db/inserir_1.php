@@ -1,4 +1,4 @@
-<div class="titulo">Inserir Dados</div>
+<div class="titulo">Inserir Registrtos 1</div>
 
 <?php
 
